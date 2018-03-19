@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>window_skinWeights</class>
+ <widget class="QMainWindow" name="window_skinWeights">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>491</width>
+    <height>308</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Skin Weights Handler</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="widget_tabs">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab_export">
+       <attribute name="title">
+        <string>Export Skin Weights</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <layout class="QGridLayout" name="lyt_grid_mainExport">
+          <item row="4" column="0">
+           <layout class="QVBoxLayout" name="lyt_vertical_horizontal_btnExport">
+            <item>
+             <widget class="QPushButton" name="btn_export">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Export</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="3" column="0">
+           <widget class="QCheckBox" name="chkbox_screenshot">
+            <property name="text">
+             <string>Take screenshots of vertices</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <layout class="QHBoxLayout" name="lyt_vertical_pathExport">
+            <item>
+             <widget class="QLineEdit" name="txt_exportPath"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_browseExport">
+              <property name="text">
+               <string>Browse</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="0">
+           <layout class="QVBoxLayout" name="lyt_horizontal_radiobtns">
+            <item>
+             <layout class="QHBoxLayout" name="lyt_vertical_radiobtns">
+              <item>
+               <widget class="QRadioButton" name="rdbtn_sel">
+                <property name="text">
+                 <string>Selected geometry</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="rdbtn_all">
+                <property name="text">
+                 <string>All geometry</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_import">
+       <attribute name="title">
+        <string>Import Skin Weights</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QVBoxLayout" name="lyt_horizontal_main">
+          <item>
+           <layout class="QVBoxLayout" name="lyt_horizontal_images"/>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="lyt_vertical_path">
+            <property name="sizeConstraint">
+             <enum>QLayout::SetFixedSize</enum>
+            </property>
+            <item>
+             <widget class="QLineEdit" name="txt_importPath"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_importPath">
+              <property name="text">
+               <string>Browse</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="lyt_horizontal_import">
+            <item>
+             <widget class="QPushButton" name="btn_import">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Import</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lbl_status">
+      <property name="text">
+       <string>//</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>491</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
